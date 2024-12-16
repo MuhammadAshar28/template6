@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.heroText {
+  width: 34rem;
+  /* height: 16rem; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  padding: 4rem;
+  line-height: 2rem;
+}
+
+.heroText h6 {
+  font-weight: bold;
+}
+
+.heroText h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #b88e2f;
+}
+
+
+
+.heroText .buyBtn {
+  background-color: #b88e2f;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  color: white;
+}
